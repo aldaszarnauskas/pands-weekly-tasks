@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
-
-from datetime import date
-from datetime import datetime
-
-# Import packahes
+ 
+# Import packages
 from datetime import date
 from datetime import datetime
 
@@ -13,10 +10,11 @@ weekend = ["Saturday", "Sunday"]
 
 # Obtain the day of the week that is ATM
 dt = date.today()
+# Obtain only the day of the week
 day = dt.strftime("%A")
 
 # Print if it is weekday or weekend
 if day in weekday:
-    print("Yes, unfortunately today is a weekday.")
+     print("Yes, unfortunately today is a weekday.")
 else:
-    print("It is the weekend, yay!")
+     print("It is the weekend, yay!")

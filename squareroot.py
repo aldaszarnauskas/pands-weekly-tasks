@@ -7,8 +7,8 @@ aninput = float(aninput)
 
 
 # Th formula to calculate the square root: 
-# root = 0.5 * (X + (N / X))
-# x = a for a > 0, i.e. to solve x2 = a
+# root = 0.5 * (x + (aninput / x))
+# x = aninput for aninput > 0, i.e. to solve x*x = aninput
 
 # Define an x
 x = aninput

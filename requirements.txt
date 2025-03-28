@@ -1,6 +1,6 @@
 # Requirements for each program in this repo
 
 weekday.py: datetime
-
 es.py: sys
+plottask.py: numpy; pyplot from matplotlib
 

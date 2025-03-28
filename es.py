@@ -1,24 +1,20 @@
 #!/bin/env python3
 
-#!/bin/env python3
-
+# sys helps to retrieve arguments given on a command line
 import sys
 
-# Assumptions: only .txt files given a string format, es.py accepts one argument (no less or more)
-# sys.arg contains the arguments given on a command line
-# Check if 1 argument is given
-if len(sys.argv) == 1:
-    print("Please specify a text file")
-elif len(sys.argv) > 2:
-    print("es.py takes in just one argument")
+
+# Assumptions:
+# (1) one argument on a command line given
+# (2) as a .txt file
+# (3) and a text file is not empty
 
 
+# (1) Check if only one argument was given on command line
+if (len(sys.argv) == 1) & (len(sys.argv) >= 3):
+    print("Please specify one text file")
 
-# Check if the argument is given in a string format
-elif type(sys.argv[1]) != str:
-    print("Only filenames in string format are accepted")
-
-# Check if a text file is given
+# (2) Check if the argument is in a .txt format
 elif sys.argv[1][-4:] != ".txt":
     print("Only text files are accepted")
 
@@ -27,9 +23,14 @@ else:
     aninput = sys.argv[1]
     # Reads in the text file
     with open(aninput, "r") as file:
-
         # Stores a text file in the content object
-        content = file.read()
-        # Counts the # of es in the text file
-        print(content.count("e"))
+        content = file.read().strip()
+
+        # (3) Check if the text file is not empty, else exit()
+        if len(content) == 0:
+            print("Your text file is empty. Please be creative and add some text!")
+
+        else:
+            # Counts the # of es in the text file
+            print(content.count("e"))
 

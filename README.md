@@ -6,10 +6,10 @@ In this repository, you can find Aldas Zarnauskas weekly submissions for the Pro
 ### The begining of the World
 1. helloworld.py prints "Hello World"
 
-### A simple addition
+### Add two inputs
 2. bank.py prompts the user to enter twice an amount in cents and outputs the sum of those two values expressed as euros.
 
-### How to make the account # incognito
+### Convert the digits, except the last four, of your account number into Xs
 3. accounts.py prints out an account number expressed as Xs, except the last four values.
 The program firtsly prompts the user to enter an account number. The requirements for an account number are (1)it contains only digits and (2) it must be longer than 4 digits. Secondly, it checks if the input meets the requirements and outputs and alert message if it does not meet the requirements. Otherwise, it outputs the input as Xs, except the last four digits.
 
@@ -21,10 +21,18 @@ The program uses recursive programming principle where the program recursively t
 5. weekday.py prints out a certain phrase depending if it's weekday or weekday when the program is run.
 
 ### Calculating a square root
-6. squareroot.py takes integer as the input and outputs the square root of it or the approximation of the square root. The program uses Newton's method to calculate the square root which is: root = 0.5 * (x + (aninput / x)); x = aninput for aninput > 0, i.e. to solve x*x = aninput. This formula not necessarily gives the right answer on the first go. It iteratively performs calculations until x*x=aninput or it reaches the 1000 iterations. If x*x=aninput, then the program gives the exact square root. If the program terminates when it performs this calculations for 1000 iterations, then, the program gives the approximations of the square root.
+6. squareroot.py calculates or approximates the square root of a given integer. The square root is calculated based on Newton's method: 
+- root = 0.5 * (x + (aninput / x)); x = aninput for aninput > 0, i.e. to solve x*x = aninput.  
+This formula is used iteratively approximate the square root where the output of calculations is placed back into the equation until an exact or a good approximation of a square root is obtained. We terminate such computation until an exact square root is obtained or until 1000 iterations have passed, thus, obtaining an approximation of a square root.
+
 
 ### How many Es do you have in your file?
-7. es.py should be activate on a command line. It takes a text file as the first and the only argument. The program also checks if arguments were given. It outputs an error message if: (1) no arguments were given, (2) more than one argument was given, (3) not a text file was given
+7. es.py retrieves the # of e in a text file. This program is executable on the command line. The program has 3 assumptions to work: 
+- (1) only one argument on a command line given 
+- (2) the argument specifies directory of a .txt file
+- (3) and a text file is not empty
+If any of those assumptions are not met, the program gives a corresponding error message.
+If all assumptions are met, the program counts the number of e in the text file and outputs the count.
 
 # License
 No license

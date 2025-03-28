@@ -31,7 +31,7 @@ This formula is used iteratively approximate the square root where the output of
 7. es.py retrieves the # of e in a text file. This program is executable on the command line. The program has 3 assumptions to work: 
 - (1) only one argument on a command line given 
 - (2) the argument specifies directory of a .txt file
-- (3) and a text file is not empty
+- (3) and a text file is not empty  
 If any of those assumptions are not met, the program gives a corresponding error message.
 If all assumptions are met, the program counts the number of e in the text file and outputs the count.
 
@@ -39,7 +39,7 @@ If all assumptions are met, the program counts the number of e in the text file 
 ### Lets Plot some math!
 8. plottask.py plots  
 - a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
-- and a plot of the function  h(x)=x3 in the range 0 to 10, 
+- and a plot of the function  h(x)=x3 in the range 0 to 10,  
 on one set of axes and saves the result as figure.png
 
 # License

@@ -1,5 +1,6 @@
 # Weekly Assignment Submissions for the Programming and Scripting
-In this repository, you can find Aldas Zarnauskas weekly submissions for the Programming and Scripting module. 
+In this repository, you can find Aldas Zarnauskas weekly submissions for the Programming and Scripting module.
+There are 8 submissions in total. 
 
 ## Explanation of each submission
 
@@ -33,6 +34,13 @@ This formula is used iteratively approximate the square root where the output of
 - (3) and a text file is not empty
 If any of those assumptions are not met, the program gives a corresponding error message.
 If all assumptions are met, the program counts the number of e in the text file and outputs the count.
+
+
+### Lets Plot some math!
+8. plottask.py plots  
+- a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
+- and a plot of the function  h(x)=x3 in the range 0 to 10, 
+on one set of axes and saves the result as figure.png
 
 # License
 No license
